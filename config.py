@@ -1,0 +1,31 @@
+import os
+
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+
+class Config:
+    HOST = os.getenv('HOST')
+
+    REDIS_PORT = os.getenv('REDIS_PORT')
+    REDIS_HOST = os.getenv('REDIS_HOST')
+
+    CELERY_BACKEND = os.getenv('CELERY_BACKEND')
+    CELERY_BROKER = os.getenv('CELERY_BROKER')
+
+    TWOCAPTCHA_TOKEN = os.getenv('TWOCAPTCHA_TOKEN')
+    ANTICAPTCHA_TOKEN = os.getenv('ANTICAPTCHA_TOKEN')
+    IMAGETYPERZ_TOKEN = os.getenv('IMAGETYPERZ_TOKEN')
+    BCSAPI_TOKEN = os.getenv('BCSAPI_TOKEN')
+    AZCAPTCHA_TOKEN = os.getenv('AZCAPTCHA_TOKEN')
+
+    DEATHBYCAPTCHA_TOKEN = os.getenv('DEATHBYCAPTCHA_TOKEN')
+    DEATHBYCAPTCHA_LOGIN = os.getenv('DEATHBYCAPTCHA_LOGIN')
+    DEATHBYCAPTCHA_PASSWORD = os.getenv('DEATHBYCAPTCHA_PASSWORD')
+
+    ENDCAPTCHA_LOGIN = os.getenv('ENDCAPTCHA_LOGIN')
+    ENDCAPTCHA_PASSWORD = os.getenv('ENDCAPTCHA_PASSWORD')
+
+
